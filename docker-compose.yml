@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  dockerbanklogin:
+    image: ${DOCKER_REGISTRY-}dockerbanklogin
+    build:
+      context: .
+      dockerfile: DockerBankLogin/Dockerfile
